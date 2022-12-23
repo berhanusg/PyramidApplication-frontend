@@ -1,0 +1,26 @@
+<h2>Address List</h2>
+<table class = "table table-striped">
+    <thead>
+        <tr>
+            <th>street</th>
+            <th>city</th>
+            <th> state</th>
+            <th>zip Code</th>
+            <th> country</th>
+        </tr>
+
+    </thead>
+     <tbody>
+        <ng-container *ngFor="let address of address">
+        <tr >
+            <td>{{address.street}}</td>
+            <td>{{address.city}}</td>
+            <td>{{address.state}}</td>
+            <td>{{address.zipcode}}</td>
+            <td>{{address.country}}</td>
+
+        </tr>
+       </ng-container>
+     </tbody>
+
+</table>
