@@ -4,7 +4,7 @@ import { AddressListComponent } from './address-list/address-list.component';
 
 const routes: Routes = [
 {path:'address', component:AddressListComponent},
-{path:'', redirectTo:'Address', pathMatch:'full'}
+{path:'', redirectTo:'/address', pathMatch:'full'}
 ];
 
 @NgModule({

@@ -8,15 +8,18 @@ import { ServiceService } from '../service.service';
   styleUrls: ['./address-list.component.css']
 })
 export class AddressListComponent implements OnInit {
-  address!:Address[];
+  addresses!:Address[];
 
   constructor(private service:ServiceService) { }
 
   ngOnInit(): void {
      this.service.getAddressList().subscribe(data=>{
-     this.address=data;
+     this.addresses=data;
+
+     console.log( "Testing " + this.addresses.length)
 
      })
+     
   }
   
 
